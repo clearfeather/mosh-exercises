@@ -35,4 +35,5 @@ function CreateAddress(street, city, zip) {
     this.zip = zip;
 }
 let NewTown = new CreateAddress('999 Zee St', 'Cozy Town', 77777);
+let NewTown2 = new CreateAddress('888 Oct Ln', 'Cozy Town', 77777);
 console.log(NewTown);
