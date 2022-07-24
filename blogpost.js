@@ -12,3 +12,19 @@ const blogPost = {
     isLive: true
 }
 console.log(blogPost);
+
+// Constructor Blog Post
+function CreateBlogPost(title, body, author) {
+    this.title = title;
+    this.body = body;
+    this.author = author;
+    this.views = 0;
+    this.comments = [];
+    this.isLive = false;
+}
+
+let newPost = new CreateBlogPost(
+    'New Title', 'Body Text', 'Some Author'
+);
+
+console.log(newPost);
