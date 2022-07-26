@@ -1,7 +1,7 @@
 // Array Practice
 
-const numbers = [1,2,3];
-const numbers2 = [7,8,9];
+let numbers = [1,2,3];
+let numbers2 = [7,8,9];
 
 numbers.push(4,5);
 numbers.unshift(0);
@@ -28,3 +28,10 @@ numbers.sort();
 console.log(numbers);
 numbers.reverse();
 console.log(numbers);
+
+numbers = [1, -1, 2, 3];
+const filtered = numbers.filter(n => n >= 0);
+const items = filtered.map(n => `<li>${n}</li>`);
+const html = `<ul>${items.join('')}</ul>`;
+console.log(items);
+console.log(html);
