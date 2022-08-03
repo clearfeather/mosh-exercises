@@ -2,7 +2,9 @@
 // if array, Array.isArray()
 
 function sum(...sums) {
-    return sums.reduce((a,b) => a + b);
+    const reducer = (sum, val) => sum + val;
+    const initialValue = 0;
+    return sums.reduce(reducer, initialValue);
 }
 
 total = sum(1,2,3,4);
