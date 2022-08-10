@@ -1,4 +1,4 @@
-// Grading Scale
+// Good Grading Scale
 // 0-59: F
 // 60-69: D
 // 70-79: C
